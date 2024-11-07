@@ -1,12 +1,12 @@
 # Домашнее задание к занятию "`Базовые объекты K8S`" - `Макаров Денис`
 
-
-
 ---
 
 ### Задание 1. Создать Pod с именем hello-world
 
 1. Создать манифест (yaml-конфигурацию) Pod.
+Создал Pod c именем hello-world представлен ниже:
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -20,21 +20,18 @@ spec:
     - containerPort: 8080
 ```
 2. Использовать image - gcr.io/kubernetes-e2e-test-images/echoserver:2.2.
-```bash
-nikulinn@nikulin:~/other/kuber_1-2/src$ kubectl apply -f my_pod.yaml 
-pod/hello-world created
-nikulinn@nikulin:~/other/kuber_1-2/src$ kubectl get pods -o wide
-NAME          READY   STATUS    RESTARTS   AGE   IP             NODE          NOMINATED NODE   READINESS GATES
-hello-world   1/1     Running   0          6s    10.1.123.143   netology-01   <none>           <none>
-```
+
+Выполнение представлено на скриншотах ниже:
+
+![pod](https://github.com/user-attachments/assets/fb5523fc-bb57-4d2d-a046-23affd6fc40c)
+
+![status pod](https://github.com/user-attachments/assets/130a6d82-f40b-4e4b-9ea1-c22d646e2b93)
+
 3. Подключиться локально к Pod с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
-```bash
-nikulinn@nikulin:~/other/kuber_1-2/src$ kubectl port-forward hello-world 8088:8080
-Forwarding from 127.0.0.1:8088 -> 8080
-Forwarding from [::1]:8088 -> 8080
-Handling connection for 8088
-```
-![img_1.png](img%2Fimg_1.png)
+
+Выполнение представлено на скриншоте ниже:
+
+![web](https://github.com/user-attachments/assets/f52f2a32-9214-4de0-8099-2b1c621c5536)
 
 ------
 
