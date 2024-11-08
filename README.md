@@ -56,7 +56,7 @@ spec:
 ```
 2. Использовать image — gcr.io/kubernetes-e2e-test-images/echoserver:2.2.
 
-Выполнение представлено на скриншотах ниже:
+Выполнение представлено на скриншоте ниже:
 
 ![netology-web pod](https://github.com/user-attachments/assets/118f6397-1365-4d3f-8d88-d90fcab130bd)
 
@@ -82,7 +82,7 @@ spec:
 
 4. Подключиться локально к Service с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
 
-Выполнение представлено на скриншоте ниже:
+Выполнение представлено на скриншотах ниже:
 
 ![curl](https://github.com/user-attachments/assets/7963aca3-2ee2-4107-982e-17e617460b3a)
 
