@@ -84,6 +84,9 @@ spec:
 
 Выполнение представлено на скриншоте ниже:
 
+![curl](https://github.com/user-attachments/assets/7963aca3-2ee2-4107-982e-17e617460b3a)
+
+
 ![netology-web](https://github.com/user-attachments/assets/f7a6d1dc-1e52-433d-a9f7-d2651a0f2005)
 
 ------
