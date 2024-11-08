@@ -4,7 +4,7 @@ metadata:
   name: netology-svc
 spec:
   ports:
-    - name: wed
+    - name: web
       port: 8080
   selector:
     app: netology
